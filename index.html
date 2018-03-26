@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hover card</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Spectral+SC:500" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrap">
+  <h1> <i class="fa fa-glass" aria-hidden="true"></i>
+  Grover-Zampa Chêne</h1>
+  <div class="task">
+    <div class="abstract">
+      <h2>Details..</h2>
+      <p>One of the best wine in India </p>
+    </div>
+    <div id="details" class="hide">
+      <!-- <div class="details__inner"> -->
+        <h4>Grover Zampa Vineyards (Bangalore)</h4>
+        <p>Grover Zampa Vineyards is formed as a result of a merger between Grover Vineyards Ltd (GVL) and Vallee De Vin Pvt Ltd (VDV)
+
+The group produces around 100,000 cases. Currently the No.2 wine company in the country, Grover Zampa Vineyards is poised to emerge as a strong contender to the market leader, Sula Vineyards
+
+Quote: In August 2005, Steven Spurrier quoted "Grover's La Reserve" an 80% CS and 20 % Syrah Blend as best New World Red in Decanter Magazine.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+
+document.querySelector(".abstract").addEventListener("mouseover", function(){
+  document.querySelector("#details").classList.toggle("hide");
+})
+</script>
+</body>
+</html>
